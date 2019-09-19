@@ -83,7 +83,7 @@ abstract class AbstractLogoutRequest extends AbstractLogout implements SamlReque
          * Set NameId
          */
         $logout->setNameID(
-            $nameId = new NameID($providerIdentity->nameId, SamlConstants::NAME_ID_FORMAT_EMAIL)
+            $nameId = new NameID($providerIdentity->nameId, SamlConstants::NAME_ID_FORMAT_NULL)
         );
 
         /**
